@@ -1,0 +1,62 @@
+/*@import '@mdi/font/css/materialdesignicons.css';*/
+@import '../../node_modules/@mdi/font/css/materialdesignicons.min.css';
+@import 'vuetify/styles';
+
+:root {
+  --primary: rgb(78,150,68) /*'#4e9644';*/
+}
+.main {
+  background-image: url(@/assets/back.jpg) ;
+  /*background-color: rgba(0,0,0, .8);*/
+  background-color: rgba(0,22,3, 1);
+  /*background-size: 400px;*/
+  background-blend-mode: overlay;
+  background-repeat: repeat;
+}
+p {
+  text-indent: 2.5em;
+}
+/* Цвета для кардов */ /*
+.v-card--variant-elevated, .v-card--variant-flat {
+  background: rgb(49, 49, 49);
+}*/
+.v-app-bar-nav-icon {
+  display: none;
+}
+.header_links {
+  height: inherit;
+}
+@media screen and (max-width: 900px) {
+  .header_links {
+    display: none;
+  }
+  .v-app-bar-nav-icon {
+    display: block;
+  }
+}
+@media screen and (min-width: 901px) {
+  .v-navigation-drawer {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+}
+.counter_card_actions {
+  color: #616161;
+  font-size: 12px;
+  &::before {
+    content: '';
+    padding-left: 7px;
+  }
+}
+.event_table {
+  border-radius: 4px; 
+  box-shadow: 0px 0 3px rgba(0,0,0,.5);
+}.v-card.events.u {
+  background-color: var(--primary);
+}.v-card.events.g {
+  background-color: #2a4c25;
+}.v-data-table td,.v-data-table th{
+  padding: 0 10px !important;
+}
